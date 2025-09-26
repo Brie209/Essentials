@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Unit4_CurvesLab.ma
-//Last modified: Thu, Sep 25, 2025 08:42:14 PM
+//Last modified: Fri, Sep 26, 2025 08:58:14 AM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "509F3DE5-447F-CE9E-A57C-4695E54D8B68";
+fileInfo "UUID" "DAEA58AD-4A63-4813-9847-18B4561BA048";
 createNode transform -s -n "persp";
 	rename -uid "FAB96C95-4938-CD75-4D40-85A306373F9B";
 	setAttr ".v" no;
@@ -6938,6 +6938,25 @@ createNode mesh -n "revolvedSurfaceShape2" -p "revolvedSurface2";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
+createNode transform -n "curve2";
+	rename -uid "90B89F04-461C-BEBE-AF23-2DB5835A4DC2";
+createNode nurbsCurve -n "curveShape2" -p "curve2";
+	rename -uid "AF65EBDA-4AD9-D450-B201-209CDEE05958";
+	setAttr -k off ".v";
+	setAttr ".cc" -type "nurbsCurve" 
+		3 6 0 no 3
+		11 0 0 0 1 2 3 4 5 6 6 6
+		9
+		-0.53164195968550798 5.4637284471704293 0
+		-1.0901816504382136 6.2129890079362529 0
+		-0.74960866827193096 7.0984787615685914 0
+		-0.082085623226014204 7.7796247259011579 0
+		0.78978121111967248 7.2755767122950585 0
+		0.61268326039320464 6.281103604369509 0
+		0.28573319751357196 5.6953180750435015 0
+		-0.12295438108596879 5.4501055278837773 0
+		-0.53164195968550798 5.4364826085971254 0
+		;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "70CFEB0B-4998-4BE1-5734-4CAF561119AB";
 	setAttr -s 2 ".lnk";
