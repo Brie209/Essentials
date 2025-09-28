@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Unit4_CurvesLab.ma
-//Last modified: Sat, Sep 27, 2025 06:39:30 PM
+//Last modified: Sat, Sep 27, 2025 07:19:25 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -11,22 +11,22 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "69BD5C4C-4C00-6E50-20EC-0894C0C6933F";
+fileInfo "UUID" "A6D15976-42F9-9FFA-5AA7-C98FAE0547D5";
 createNode transform -s -n "persp";
 	rename -uid "FAB96C95-4938-CD75-4D40-85A306373F9B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -5.6372828812629852 17.17869241284658 12.734004672832754 ;
-	setAttr ".r" -type "double3" -51.938352731383418 -359.39999999981075 -1.4909667575893937e-16 ;
+	setAttr ".t" -type "double3" -3.5290926878940128 12.034284238360106 21.621188527770919 ;
+	setAttr ".r" -type "double3" -15.338352731586783 -1450.9999999997126 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1256EFAB-488C-FE69-83D8-E2A67DE50D0D";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 20.656152621576872;
+	setAttr ".coi" 21.36652063989764;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -5.770637947419206 0.91511447878127394 -6.0181646399648514e-07 ;
+	setAttr ".tp" -type "double3" 0.16334063236557039 9.4323244142141718 0.63670299623337678 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "FACBB307-4E03-2C5C-A0F6-AE9E81F5E6A6";
@@ -111,7 +111,7 @@ createNode mesh -n "Pot" -p "revolvedSurface2";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5138888955116272 0.2708333283662796 ;
+	setAttr ".pv" -type "double2" 1 0.66666668653488159 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 1900 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0 0 1 1 0.5 1 0.5 0.5 0 0.5
@@ -5733,6 +5733,7 @@ createNode mesh -n "loftedSurfaceShape2" -p "loftedSurface2";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.1666666716337204 0 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 111 ".uvst[0].uvsp[0:110]" -type "float2" 0 0 1 0 1 1 0 1 0.5
 		 0 0.5 1 0.2857143 0 0.2857143 1 0.15079366 0 0.15079366 1 0.095238097 0 0.095238097
@@ -5795,25 +5796,25 @@ createNode mesh -n "loftedSurfaceShape2" -p "loftedSurface2";
 		 -3.52906752 3.94120526 -0.31072509 -3.49550605 3.93321371 -0.32785529 -3.22713256 4.25191784 -0.31072509
 		 -3.32233834 3.94969273 -0.15547828;
 	setAttr -s 182 ".ed";
-	setAttr ".ed[0:165]"  107 2 1 2 110 1 110 109 1 109 107 1 55 5 1 5 58 1 58 57 1
-		 57 55 1 30 7 1 7 33 1 33 32 1 32 30 1 17 9 1 9 20 1 20 19 1 19 17 1 12 11 1 11 16 1
-		 16 15 1 15 12 1 14 10 1 10 12 1 15 14 1 0 14 1 15 13 1 13 0 1 16 3 1 3 13 1 18 8 1
-		 8 17 1 19 18 1 10 18 1 19 12 1 20 11 1 23 22 1 22 26 1 26 25 1 25 23 1 24 21 1 21 23 1
-		 25 24 1 8 24 1 25 17 1 26 9 1 29 28 1 28 22 1 23 29 1 21 27 1 27 29 1 31 6 1 6 30 1
-		 32 31 1 27 31 1 32 29 1 33 28 1 42 35 1 35 45 1 45 44 1 44 42 1 38 37 1 37 41 1 41 40 1
-		 40 38 1 39 36 1 36 38 1 40 39 1 6 39 1 40 30 1 41 7 1 43 34 1 34 42 1 44 43 1 36 43 1
-		 44 38 1 45 37 1 48 47 1 47 51 1 51 50 1 50 48 1 49 46 1 46 48 1 50 49 1 34 49 1 50 42 1
-		 51 35 1 54 53 1 53 47 1 48 54 1 46 52 1 52 54 1 56 4 1 4 55 1 57 56 1 52 56 1 57 54 1
-		 58 53 1 82 60 1 60 85 1 85 84 1 84 82 1 69 62 1 62 72 1 72 71 1 71 69 1 65 64 1 64 68 1
-		 68 67 1 67 65 1 66 63 1 63 65 1 67 66 1 4 66 1 67 55 1 68 5 1 70 61 1 61 69 1 71 70 1
-		 63 70 1 71 65 1 72 64 1 75 74 1 74 78 1 78 77 1 77 75 1 76 73 1 73 75 1 77 76 1 61 76 1
-		 77 69 1 78 62 1 81 80 1 80 74 1 75 81 1 73 79 1 79 81 1 83 59 1 59 82 1 84 83 1 79 83 1
-		 84 81 1 85 80 1 94 87 1 87 97 1 97 96 1 96 94 1 90 89 1 89 93 1 93 92 1 92 90 1 91 88 1
-		 88 90 1 92 91 1 59 91 1 92 82 1 93 60 1 95 86 1 86 94 1 96 95 1 88 95 1 96 90 1 97 89 1
-		 100 99 1 99 103 1 103 102 1 102 100 1 101 98 1;
-	setAttr ".ed[166:181]" 98 100 1 102 101 1 86 101 1 102 94 1 103 87 1 106 105 1
-		 105 99 1 100 106 1 98 104 1 104 106 1 108 1 1 1 107 1 109 108 1 104 108 1 109 106 1
-		 110 105 1;
+	setAttr ".ed[0:165]"  107 2 0 2 110 0 110 109 1 109 107 1 55 5 1 5 58 0 58 57 1
+		 57 55 1 30 7 1 7 33 0 33 32 1 32 30 1 17 9 1 9 20 0 20 19 1 19 17 1 12 11 1 11 16 0
+		 16 15 1 15 12 1 14 10 0 10 12 1 15 14 1 0 14 0 15 13 1 13 0 0 16 3 0 3 13 0 18 8 0
+		 8 17 1 19 18 1 10 18 0 19 12 1 20 11 0 23 22 1 22 26 0 26 25 1 25 23 1 24 21 0 21 23 1
+		 25 24 1 8 24 0 25 17 1 26 9 0 29 28 1 28 22 0 23 29 1 21 27 0 27 29 1 31 6 0 6 30 1
+		 32 31 1 27 31 0 32 29 1 33 28 0 42 35 1 35 45 0 45 44 1 44 42 1 38 37 1 37 41 0 41 40 1
+		 40 38 1 39 36 0 36 38 1 40 39 1 6 39 0 40 30 1 41 7 0 43 34 0 34 42 1 44 43 1 36 43 0
+		 44 38 1 45 37 0 48 47 1 47 51 0 51 50 1 50 48 1 49 46 0 46 48 1 50 49 1 34 49 0 50 42 1
+		 51 35 0 54 53 1 53 47 0 48 54 1 46 52 0 52 54 1 56 4 0 4 55 1 57 56 1 52 56 0 57 54 1
+		 58 53 0 82 60 1 60 85 0 85 84 1 84 82 1 69 62 1 62 72 0 72 71 1 71 69 1 65 64 1 64 68 0
+		 68 67 1 67 65 1 66 63 0 63 65 1 67 66 1 4 66 0 67 55 1 68 5 0 70 61 0 61 69 1 71 70 1
+		 63 70 0 71 65 1 72 64 0 75 74 1 74 78 0 78 77 1 77 75 1 76 73 0 73 75 1 77 76 1 61 76 0
+		 77 69 1 78 62 0 81 80 1 80 74 0 75 81 1 73 79 0 79 81 1 83 59 0 59 82 1 84 83 1 79 83 0
+		 84 81 1 85 80 0 94 87 1 87 97 0 97 96 1 96 94 1 90 89 1 89 93 0 93 92 1 92 90 1 91 88 0
+		 88 90 1 92 91 1 59 91 0 92 82 1 93 60 0 95 86 0 86 94 1 96 95 1 88 95 0 96 90 1 97 89 0
+		 100 99 1 99 103 0 103 102 1 102 100 1 101 98 0;
+	setAttr ".ed[166:181]" 98 100 1 102 101 1 86 101 0 102 94 1 103 87 0 106 105 1
+		 105 99 0 100 106 1 98 104 0 104 106 1 108 1 0 1 107 0 109 108 1 104 108 0 109 106 1
+		 110 105 0;
 	setAttr -s 72 -ch 288 ".fc[0:71]" -type "polyFaces" 
 		f 4 0 1 2 3
 		mu 0 4 107 2 110 109
@@ -6501,15 +6502,15 @@ createNode mesh -n "loftedSurfaceShape3" -p "loftedSurface3";
 		 2.072245836 4.39088821 0.022156367 2.14959335 4.70877886 -0.038694546 2.15501189 4.27341986 0.082600363
 		 2.34237981 4.090060234 0.021558343 2.18350792 4.19115829 0.022156367 2.24495101 4.17792273 0.048223283
 		 2.23369837 4.49319363 0.00018157087;
-	setAttr -s 92 ".ed[0:91]"  53 2 1 2 56 1 56 55 1 55 53 1 28 5 1 5 31 1
-		 31 30 1 30 28 1 15 7 1 7 18 1 18 17 1 17 15 1 10 9 1 9 14 1 14 13 1 13 10 1 12 8 1
-		 8 10 1 13 12 1 0 12 1 13 11 1 11 0 1 14 3 1 3 11 1 16 6 1 6 15 1 17 16 1 8 16 1 17 10 1
-		 18 9 1 21 20 1 20 24 1 24 23 1 23 21 1 22 19 1 19 21 1 23 22 1 6 22 1 23 15 1 24 7 1
-		 27 26 1 26 20 1 21 27 1 19 25 1 25 27 1 29 4 1 4 28 1 30 29 1 25 29 1 30 27 1 31 26 1
-		 40 33 1 33 43 1 43 42 1 42 40 1 36 35 1 35 39 1 39 38 1 38 36 1 37 34 1 34 36 1 38 37 1
-		 4 37 1 38 28 1 39 5 1 41 32 1 32 40 1 42 41 1 34 41 1 42 36 1 43 35 1 46 45 1 45 49 1
-		 49 48 1 48 46 1 47 44 1 44 46 1 48 47 1 32 47 1 48 40 1 49 33 1 52 51 1 51 45 1 46 52 1
-		 44 50 1 50 52 1 54 1 1 1 53 1 55 54 1 50 54 1 55 52 1 56 51 1;
+	setAttr -s 92 ".ed[0:91]"  53 2 0 2 56 0 56 55 1 55 53 1 28 5 1 5 31 0
+		 31 30 1 30 28 1 15 7 1 7 18 0 18 17 1 17 15 1 10 9 1 9 14 0 14 13 1 13 10 1 12 8 0
+		 8 10 1 13 12 1 0 12 0 13 11 1 11 0 0 14 3 0 3 11 0 16 6 0 6 15 1 17 16 1 8 16 0 17 10 1
+		 18 9 0 21 20 1 20 24 0 24 23 1 23 21 1 22 19 0 19 21 1 23 22 1 6 22 0 23 15 1 24 7 0
+		 27 26 1 26 20 0 21 27 1 19 25 0 25 27 1 29 4 0 4 28 1 30 29 1 25 29 0 30 27 1 31 26 0
+		 40 33 1 33 43 0 43 42 1 42 40 1 36 35 1 35 39 0 39 38 1 38 36 1 37 34 0 34 36 1 38 37 1
+		 4 37 0 38 28 1 39 5 0 41 32 0 32 40 1 42 41 1 34 41 0 42 36 1 43 35 0 46 45 1 45 49 0
+		 49 48 1 48 46 1 47 44 0 44 46 1 48 47 1 32 47 0 48 40 1 49 33 0 52 51 1 51 45 0 46 52 1
+		 44 50 0 50 52 1 54 1 0 1 53 0 55 54 1 50 54 0 55 52 1 56 51 0;
 	setAttr -s 36 -ch 144 ".fc[0:35]" -type "polyFaces" 
 		f 4 0 1 2 3
 		mu 0 4 53 2 56 55
@@ -10143,10 +10144,10 @@ createNode mesh -n "loftedSurfaceShape13" -p "loftedSurface13";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "loftedSurface14";
+createNode transform -n "leaf1";
 	rename -uid "F23CAF56-43DE-F9D7-1ECF-33B9500540C3";
-	setAttr ".t" -type "double3" -5.8431135764726267 0 0 ;
-createNode mesh -n "leaf1" -p "loftedSurface14";
+	setAttr ".t" -type "double3" -7.7099204804647021 0 -7.4523512199899988 ;
+createNode mesh -n "leaf1" -p "|leaf1";
 	rename -uid "A16EB582-4AB6-BD91-43E3-59AA668481F5";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -10235,10 +10236,10 @@ createNode mesh -n "leaf1" -p "loftedSurface14";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "loftedSurface17";
+createNode transform -n "leaf3";
 	rename -uid "AD2059A9-4421-0CC1-EB21-5DAEEB241D28";
-	setAttr ".t" -type "double3" -5.8431135764726267 0 0 ;
-createNode mesh -n "leaf3" -p "loftedSurface17";
+	setAttr ".t" -type "double3" -7.7099204804647021 0 -7.4523512199899988 ;
+createNode mesh -n "leaf3" -p "|leaf3";
 	rename -uid "A2C10D03-41D7-19B7-5E3B-FE900C0C8EE8";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -10364,10 +10365,10 @@ createNode mesh -n "leaf3" -p "loftedSurface17";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "loftedSurface26";
+createNode transform -n "leaf2";
 	rename -uid "36017A6B-4EDD-DA59-3C06-00A72038F18C";
-	setAttr ".t" -type "double3" -5.8431135764726267 0 0 ;
-createNode mesh -n "leaf2" -p "loftedSurface26";
+	setAttr ".t" -type "double3" -7.7099204804647021 0 -7.4523512199899988 ;
+createNode mesh -n "leaf2" -p "|leaf2";
 	rename -uid "CEFF208A-4739-F954-51C2-32BFA6B70B43";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -10602,11 +10603,12 @@ createNode mesh -n "leaf2" -p "loftedSurface26";
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-createNode transform -n "loftedSurface27";
+createNode transform -n "flower";
 	rename -uid "E1E7D5A1-409E-1705-D6EA-4F8AC852C646";
+	setAttr ".t" -type "double3" -1.8668069039920754 0 -7.4523512199899988 ;
 	setAttr ".rp" -type "double3" -5.6882142773278819 7.4460015296936035 0.10834652185440063 ;
 	setAttr ".sp" -type "double3" -5.6882142773278819 7.4460015296936035 0.10834652185440063 ;
-createNode mesh -n "flower" -p "loftedSurface27";
+createNode mesh -n "flower" -p "|flower";
 	rename -uid "0FA5D0BB-4553-7937-9989-3FB59D86DB95";
 	setAttr -k off ".v";
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:1013]";
@@ -13603,6 +13605,7 @@ createNode mesh -n "flower" -p "loftedSurface27";
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode transform -n "pot";
 	rename -uid "1886CE3F-499E-99C7-BAEF-7693D0672B0E";
+	setAttr ".t" -type "double3" -1.8668069039920754 0 -7.4523512199899988 ;
 	setAttr ".rp" -type "double3" -5.8431135764726267 2.8339214622974396 -2.384185791015625e-07 ;
 	setAttr ".sp" -type "double3" -5.8431135764726267 2.8339214622974396 -2.384185791015625e-07 ;
 createNode mesh -n "potShape" -p "pot";
@@ -18891,9 +18894,9 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-connectAttr "groupId39.id" "flower.iog.og[0].gid";
-connectAttr ":initialShadingGroup.mwc" "flower.iog.og[0].gco";
-connectAttr "groupId32.id" "flower.ciog.cog[0].cgid";
+connectAttr "groupId39.id" "|flower|flower.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "|flower|flower.iog.og[0].gco";
+connectAttr "groupId32.id" "|flower|flower.ciog.cog[0].cgid";
 connectAttr "groupId40.id" "potShape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "potShape.iog.og[0].gco";
 connectAttr "groupId38.id" "potShape.ciog.cog[0].cgid";
@@ -18924,12 +18927,12 @@ connectAttr "loftedSurfaceShape10.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "loftedSurfaceShape11.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "loftedSurfaceShape12.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "loftedSurfaceShape13.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "leaf1.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "leaf3.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "leaf2.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "flower.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "|leaf1|leaf1.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "|leaf3|leaf3.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "|leaf2|leaf2.iog" ":initialShadingGroup.dsm" -na;
+connectAttr "|flower|flower.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "potShape.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
-connectAttr "flower.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "|flower|flower.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "potShape.iog.og[0]" ":initialShadingGroup.dsm" -na;
 connectAttr "groupId39.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId40.msg" ":initialShadingGroup.gn" -na;
