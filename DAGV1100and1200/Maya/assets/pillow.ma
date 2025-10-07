@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: pillow.ma
-//Last modified: Tue, Oct 07, 2025 04:47:57 PM
+//Last modified: Tue, Oct 07, 2025 04:49:47 PM
 //Codeset: 1252
 requires maya "2025ff03";
 currentUnit -l centimeter -a degree -t film;
@@ -9,12 +9,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "44CED4A4-4687-D38C-58EA-4B9AC1FFCD14";
+fileInfo "UUID" "11997B0F-4017-DA2A-63E7-558912A404D6";
 createNode transform -s -n "persp";
 	rename -uid "A82A2834-4D77-0E16-8DFA-898DCB4D736C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 55.885319140917524 2.9344290861268849 7.9000302692838016 ;
-	setAttr ".r" -type "double3" 5.9999999999907407 442.39999999991585 0 ;
+	setAttr ".t" -type "double3" 56.566226961750317 9.2513741480013287 -4.6851496786795863 ;
+	setAttr ".r" -type "double3" 0 454.39999999991471 0 ;
 	setAttr ".rpt" -type "double3" 1.0728006851082777e-14 -4.5646976652802375e-14 1.754870093188681e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "506D8632-478B-BCE6-F593-E7B9D871C28A";
