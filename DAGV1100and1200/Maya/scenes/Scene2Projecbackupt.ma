@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Scene2Projecbackupt.ma
-//Last modified: Thu, Nov 13, 2025 04:45:54 PM
+//Last modified: Fri, Nov 14, 2025 10:28:31 AM
 //Codeset: 1252
 file -rdi 1 -ns "futur_flower_holder" -rfn "futur_flower_holderRN" -op "v=0;"
 		 -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//assets/futur_flower holder.ma";
@@ -24,12 +24,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "68D08D89-4B61-5C0F-DC80-6AA8DD433053";
+fileInfo "UUID" "043B1949-4056-13C4-0195-3B8C185BCF53";
 createNode transform -s -n "persp";
 	rename -uid "ADC7BAE5-4305-D79E-684C-F987358B62D0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -7.1655433473548769 34.824960475774382 56.547035511182578 ;
-	setAttr ".r" -type "double3" -29.138352729615125 -4.2000000000034445 -3.98639891691318e-16 ;
+	setAttr ".t" -type "double3" 44.451164948713881 15.188533009933437 43.712279470845068 ;
+	setAttr ".r" -type "double3" -11.138352729615498 46.200000000000017 1.1488066347884792e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3DF77C8B-47EB-25B8-B98E-D5AB8291A6CF";
 	setAttr -k off ".v" no;
