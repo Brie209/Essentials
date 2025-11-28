@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: largepot_f.ma
-//Last modified: Thu, Nov 27, 2025 09:37:17 PM
+//Last modified: Thu, Nov 27, 2025 09:39:08 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -10,7 +10,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "2B2E724C-4E46-1181-8A8F-8C952289313D";
+fileInfo "UUID" "C05878B7-4DFB-D5D0-EB54-6DA05D6E4705";
 createNode transform -n "pCylinder1";
 	rename -uid "4BE8071A-4811-4C1B-2CF0-C58C50D6762E";
 	setAttr ".rp" -type "double3" 12.642395327181649 2.1578925744162696 -12.29731024741065 ;
@@ -285,8 +285,8 @@ createNode mesh -n "polySurfaceShape1" -p "pCylinder1";
 createNode transform -s -n "persp";
 	rename -uid "484020B0-48CE-F82C-440E-63BA95DAF2E7";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 12.763047533500552 4.6930243966786209 -5.3851329329210689 ;
-	setAttr ".r" -type "double3" -20.138352729636914 1440.9999999999604 2.485186850888006e-17 ;
+	setAttr ".t" -type "double3" 15.521709716060245 7.3952589484976565 -7.9962418861227933 ;
+	setAttr ".r" -type "double3" -45.338352729636185 1473.799999999906 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F33A7824-4E93-B5C2-49D4-ECAAF0682E5D";
 	setAttr -k off ".v" no;
@@ -653,7 +653,7 @@ createNode script -n "sceneConfigurationScriptNode";
 	setAttr ".b" -type "string" "playbackOptions -min 1 -max 120 -ast 1 -aet 200 ";
 	setAttr ".st" 6;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "D5517BAC-4420-737E-2C82-839897BE1ADD";
+	rename -uid "F4566597-4F5F-E63C-BEF3-0588A4267D45";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -311.30951143919526 -207.14284891173992 ;
 	setAttr ".tgi[0].vh" -type "double2" 311.30951143919526 206.54761084015442 ;
