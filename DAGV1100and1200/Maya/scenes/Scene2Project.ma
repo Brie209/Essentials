@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Scene2Project.ma
-//Last modified: Thu, Nov 27, 2025 09:40:15 PM
+//Last modified: Thu, Nov 27, 2025 09:44:29 PM
 //Codeset: 1252
 file -rdi 1 -ns "futur_flower_holder" -rfn "futur_flower_holderRN" -op "v=0;"
 		 -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//assets/futur_flower holder.ma";
@@ -29,12 +29,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "5070207F-4FF9-1265-17A5-B4999204D481";
+fileInfo "UUID" "B6475646-472E-B544-F716-6AAF238A6EFD";
 createNode transform -s -n "persp";
 	rename -uid "ADC7BAE5-4305-D79E-684C-F987358B62D0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 23.495703158861044 32.746319183280562 31.718991477769094 ;
-	setAttr ".r" -type "double3" -35.138352729602396 394.19999999990949 -1.9227598739396042e-15 ;
+	setAttr ".t" -type "double3" 35.708283855538539 25.075411309548969 26.450207076931829 ;
+	setAttr ".r" -type "double3" -24.938352729602382 410.99999999990609 2.5269757079945025e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3DF77C8B-47EB-25B8-B98E-D5AB8291A6CF";
 	setAttr -k off ".v" no;
@@ -7940,7 +7940,7 @@ createNode reference -n "chair_fRN1";
 		"chair_fRN1" 4
 		2 "|chair_f1:pCube2" "translate" " -type \"double3\" 2.58395116873865582 0 4.3518541256241452"
 		
-		2 "|chair_f1:pCube2" "rotate" " -type \"double3\" 0.0095024704206765134 11.1659857716357358 0.046184693555195791"
+		2 "|chair_f1:pCube2" "rotate" " -type \"double3\" 0.0095482533451541948 12.48141627669621379 0.046408118128004973"
 		
 		2 "|chair_f1:pCube2" "scale" " -type \"double3\" 0.90713640962240227 0.90713640962240227 0.90713640962240227"
 		
@@ -7959,7 +7959,7 @@ createNode reference -n "largepot_fRN";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "463F6BF5-4526-3049-FC47-46A7CB3B7B9B";
+	rename -uid "36563974-4A70-C081-278A-599205FA04F5";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -42937.067067386837 -28518.451247730947 ;
 	setAttr ".tgi[0].vh" -type "double2" 42637.662317379349 28340.475064326889 ;
