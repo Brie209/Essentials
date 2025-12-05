@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Scene2Project.ma
-//Last modified: Thu, Dec 04, 2025 10:40:08 PM
+//Last modified: Thu, Dec 04, 2025 10:41:00 PM
 //Codeset: 1252
 file -rdi 1 -ns "futur_flower_holder" -rfn "futur_flower_holderRN" -op "v=0;"
 		 -typ "mayaAscii" "C:/GitHub/Essentials/DAGV1100and1200/Maya//assets/futur_flower holder.ma";
@@ -47,18 +47,18 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202505300603-a12e894a3d";
 fileInfo "osv" "Windows 10 Pro v2009 (Build: 19045)";
-fileInfo "UUID" "99A90BB1-46EA-3D48-1FFE-B299B860075F";
+fileInfo "UUID" "6AC54968-4E76-6409-7E41-FAA2FEB94461";
 createNode transform -s -n "persp";
 	rename -uid "ADC7BAE5-4305-D79E-684C-F987358B62D0";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 71.963611639600529 35.565695983535228 47.20610109412506 ;
-	setAttr ".r" -type "double3" -18.938352729581347 410.59999999980727 2.505437043986063e-15 ;
+	setAttr ".t" -type "double3" 57.307947785900126 42.974870207807001 34.575805940642908 ;
+	setAttr ".r" -type "double3" -29.138352729581413 410.99999999980565 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3DF77C8B-47EB-25B8-B98E-D5AB8291A6CF";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 89.723321754440036;
+	setAttr ".coi" 75.020380401439311;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -29619,7 +29619,7 @@ createNode groupId -n "groupId61";
 	rename -uid "4E5C457B-406B-FDC4-F145-2580303DDDFD";
 	setAttr ".ihi" 0;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "AFD34049-4441-CC08-9BB7-F7AAC4F41CEE";
+	rename -uid "44E7F9FA-4DC1-2AB3-DC74-D88786F21EB3";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" 9402.8019559311397 -25280.356138306048 ;
 	setAttr ".tgi[0].vh" -type "double2" 10973.387710582307 -24501.784740672265 ;
